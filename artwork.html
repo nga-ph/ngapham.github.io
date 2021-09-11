@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<button id="btntop" onClick="topFunction()" >  <i class="fas fa-angle-up"></i> </button>
+<button id="btntop" onClick="topFunction()" > <i class="fas fa-angle-up"></i> </button>
 <div class="navbar black"data-aos="fade-zoom-in" data-aos-duration="300" data-aos-easing="ease-in-back">
       <p class="logo"> <a href="#">  JadieNga </a> </p>
 	  <ul class="nav">
@@ -55,7 +55,6 @@
 	 <a  class="muiten wow fadeIn delay-2s" href="#sec7"> <img src="arrow-hover-image.png"></a>
 </div>
 <section id="sec7">
-
 	<div class="s7-l">
 	<p class="maintitle tracking-in-expand"> ARTWORKS </p>
 	</div>
@@ -77,7 +76,6 @@
 				</div>
 			</div>
 			</div>
-		
 		<div class="s7-item" data-aos="fade-up">
 			<div class="s7-col">
 				<p class="maintitle"> PROJECT SEM 1</p>
@@ -145,7 +143,7 @@
 	<div class="s8-1">
 	 <p class="maintitle" data-aos="fade-down"> ARE YOU INTERESTING?</p>
 		<p class="minititle" data-aos="fade-down"> BOOK ME NOW </P>
-		<img src="51575265309eredurxh8ufofjteiz7uczplslogo8yrdmycbbjhhylitem7uvk7mfq1emk6fwf3g4zoypa7be7lnf8ielbbwagffawwtxkiebty.png">
+		<div  data-aos="fade-down"> <img src="51575265309eredurxh8ufofjteiz7uczplslogo8yrdmycbbjhhylitem7uvk7mfq1emk6fwf3g4zoypa7be7lnf8ielbbwagffawwtxkiebty.png"></div>
 		<a href="contact.html"> <button type="submit" class="submit-btn contenttext jello-horizontal"> CLICK HERE </button></a>
 	</div>	
 	<div class="s6-4">
@@ -186,10 +184,12 @@
 	</div>
 	<div class="ft-b">
 		<p class="contenttext"> All rights reserved </p>
-		<p class="contenttext"> Porfolio of Nga Pham </p>
+		<p class="contenttext"> Portfolio of Nga Pham </p>
 		<p class="contenttext"> Thanks for watching! </p>
 	</div>
 </section>
+	
+	
 <script>
 var mybutton = document.getElementById("btntop");
 window.onscroll = function() {scrollFunction()};
@@ -205,14 +205,13 @@ function scrollFunction() {
   	document.documentElement.scrollTop = 0;
 }
 </script>
-	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
- <script> new WOW().init(); </script>
+<script> new WOW().init(); </script>
 <script>
   AOS.init();
 </script>
 </body>
-    <script>
+<script>
         const circleType = new CircleType(
             document.getElementById("rotated")
         ).radius(80);
