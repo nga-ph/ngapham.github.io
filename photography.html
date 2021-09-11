@@ -6,9 +6,12 @@
 	<script src="https://kit.fontawesome.com/cb8f931045.js" crossorigin="anonymous"></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
 <body>
-
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
 <button id="btntop" onClick="topFunction()" >  <i class="fas fa-angle-up"></i> </button>
 <div class="navbar"data-aos="fade-zoom-in" data-aos-duration="300" data-aos-easing="ease-in-back">
       <p class="logo"> <a href="index.html">   JadieNga </a> </p>
@@ -49,8 +52,8 @@
   <span><em>the </em>MOMENT</span>
 </h1>
 </div>
-	<section id="sec9">
-	<div class="s9-1" data-aos="fade-up"
+<section id="sec9">
+<div class="s9-1" data-aos="fade-up"
      data-aos-duration="1000">
 	<div class="s9-l s5-l">
 		<p class="maintitle"> PHOTOGRAPHY </p>
@@ -59,7 +62,7 @@
 		<img src="29571331_434609523636773_4780880876368388448_n.jpg">
 	</div>
 	</div>
-	<div class="s9-2">
+<div class="s9-2">
 		<div class="select" data-aos="fade-up">
 			<span class="link"> 
 			<a href="#section2"> All </a> 
@@ -197,7 +200,7 @@
 		</div>
 		</div>
 	</div>
-
+	</section>
 <section id="footer" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-easing="ease-in-back">
 	<div class="ft-t">
 		<div class="ft-col">
@@ -223,10 +226,56 @@
 	</div>
 	<div class="ft-b">
 		<p class="contenttext"> All rights reserved </p>
-		<p class="contenttext"> Porfolio of Nga Pham </p>
+		<p class="contenttext"> Portfolio of Nga Pham </p>
 		<p class="contenttext"> Thanks for watching! </p>
 	</div>
 </section>
+<script>
+            var cursor = $(".cursor"),
+                follower = $(".cursor-follower");
+
+            var posX = 0,
+                posY = 0,
+                mouseX = 0,
+                mouseY = 0;
+
+            TweenMax.to({}, 0.016, {
+                repeat: -1,
+                onRepeat: function() {
+                    posX += (mouseX - posX) / 9;
+                    posY += (mouseY - posY) / 9;
+
+                    TweenMax.set(follower, {
+                        css: {
+                            left: posX - 20,
+                            top: posY - 20
+                        }
+                    });
+
+                    TweenMax.set(cursor, {
+                        css: {
+                            left: mouseX,
+                            top: mouseY
+                        }
+                    });
+                }
+            });
+
+            $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $(".portfolio-item img").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".portfolio-item img").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+        </script>
 <script>
 var mybutton = document.getElementById("btntop");
 window.onscroll = function() {scrollFunction()};

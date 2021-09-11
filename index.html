@@ -9,11 +9,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
-<body onload = "followMouse();">
-     <div class="wrap">
-		 <div id="ball"></div>
-     </div>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 <div class="header">
 	<button id="btntop" onClick="topFunction()">  <i class="fas fa-angle-up"></i> </button>
   	<div class="navbar noborder">
@@ -124,7 +125,7 @@
 <section id="sec4">
 	<div class="sec4-table">
 		<div class="sec4-item"  data-aos="fade-up">
-			<img src="29871832_434608843636841_4449566968839586044_o.jpg">
+			<div class="s4-img"><img src="29871832_434608843636841_4449566968839586044_o.jpg"> </div>
 		</div>
 		<div class="sec4-item" >
 			<div> 
@@ -154,7 +155,7 @@
 			<p class="dec-text" data-aos="fade-up" data-aos-duration="1000"> <a href="artwork.html"> See More </a> </p>
 			</div>
 		<div class="sec4-item"  data-aos="fade-up" >
-			<img src="29744986_434608633636862_2730160510762782827_o.jpg">
+			<div class="s4-img"> <img src="29744986_434608633636862_2730160510762782827_o.jpg"></div>
 		</div>
 	</div>	
 </section>
@@ -287,46 +288,51 @@ function scrollFunction() {
 				0.2
 			);
 		</script>	
-<script type="text/javascript">
-     var $ = document.querySelector.bind(document);
-     var $on = document.addEventListener.bind(document);
+	<script>
+            var cursor = $(".cursor"),
+                follower = $(".cursor-follower");
 
-     var xmouse, ymouse;
-     $on('mousemove', function (e) {
-          xmouse = e.clientX || e.pageX;
-          ymouse = e.clientY || e.pageY;
-     });
+            var posX = 0,
+                posY = 0,
+                mouseX = 0,
+                mouseY = 0;
 
-     var ball = $('#ball');
-     var x = void 0,
-          y = void 0,
-          dx = void 0,
-          dy = void 0,
-          tx = 0,
-          ty = 0,
-          key = -1;
+            TweenMax.to({}, 0.016, {
+                repeat: -1,
+                onRepeat: function() {
+                    posX += (mouseX - posX) / 9;
+                    posY += (mouseY - posY) / 9;
 
-     var followMouse = function followMouse() {
-          key = requestAnimationFrame(followMouse);
+                    TweenMax.set(follower, {
+                        css: {
+                            left: posX - 20,
+                            top: posY - 20
+                        }
+                    });
 
-          if(!x || !y) {
-               x = xmouse;
-               y = ymouse;
-          } else {
-               dx = (xmouse - x) * 0.125;
-               dy = (ymouse - y) * 0.125;
-               if(Math.abs(dx) + Math.abs(dy) < 0.1) {
-                    x = xmouse;
-                    y = ymouse;
-               } else {
-                    x += dx;
-                    y += dy;
-               }
-          }
-          ball.style.left = x + 'px';
-          ball.style.top = y + 'px';
-     };
-     </script>
+                    TweenMax.set(cursor, {
+                        css: {
+                            left: mouseX,
+                            top: mouseY
+                        }
+                    });
+                }
+            });
 
+            $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $(".portfolio-item img").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".portfolio-item img").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+        </script>
 </body>
 </html>

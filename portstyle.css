@@ -10,18 +10,26 @@
 	src: url("SaolDisplay-LightItalic.ttf");
 	font-family: Saol;
 }
+body{
+	background-color: #faf7f3;
+	overflow-x: hidden
+}
+html{
+    scroll-behavior: smooth;
+}
+/*mouse move*/
 .cursor {
     position: absolute;
-    background: black;
-    width: 8px;
-    height: 8px;
+    background: white;
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
     z-index: 1;
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
         0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
     user-select: none;
     pointer-events: none;
-    transform: scale(0.8);
+    transform: scale(1);
 }
 
 .cursor::before {
@@ -44,18 +52,16 @@
     opacity: 1;
     transform: scale(12);
 }
-
 .cursor.active::before {
     opacity: 1;
 }
-
 .cursor-follower {
     position: absolute;
-    background: rgba(249,55,0,0.7);
-    width: 40px;
-    height: 40px;
+    border: 1px solid rgba(249,55,0,1.00);
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
-    z-index: 1;
+    z-index: 100;
     transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
         0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
     user-select: none;
@@ -68,7 +74,6 @@
     transform: scale(0);
 }
 
-
 *{
 	margin: 0;
 	padding: 0; 
@@ -76,13 +81,7 @@
 	color: #343434;
 	list-style: none;
 	text-decoration: none;
-}
-body{
-	background-color: #faf7f3
-}
-html{
-    scroll-behavior: smooth;
-}
+	cursor: none}
 
 .maintitle{
 	font-family: Felix Titling;
@@ -774,16 +773,44 @@ hr{
 	text-align: center;
 	padding: 50px 20px;
 }
-.sec4-item img{
+.s4-img{
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+} 
+.s4-img img{
 	height: 490px;
 	width: 260px;
 	object-fit: cover;
-	transition: 0.3s linear;
-} 
+}
+.s4-img:hover img {
+    -webkit-animation: kenburns-bottom 1s ease-out both;
+	        animation: kenburns-bottom 1s ease-out both;
+}
+
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(15px);
+            transform: scale(1.1) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+
+.s4-item:hover .s4-img img {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
 .sec4-item .minititle{
 	margin-bottom: 0;
 }
@@ -2028,28 +2055,6 @@ hr{
 	padding: 0;
 	border-bottom: 0;
 }
-/* homepage header - mousemove - codepen*/
-.wrap {
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     overflow: hidden;
-}
-#ball {
-     width: 60px;
-     height: 60px;
-     background: none;
-     border: 1px solid #f93700;
-     border-radius: 50%;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     margin: -15px 0 0 -15px;
-     pointer-events: none;
-	 z-index: 10000;
-}
 .s7-item .dec{
 	margin:0 auto 30px auto;
 }
@@ -2086,55 +2091,11 @@ hr{
             transform: scale3d(1, 1, 1);
   }
 }
-@keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-}
 .jello-horizontal {
 	-webkit-animation: jello-horizontal 0.9s infinite both;
-	        animation: jello-horizontal 0.9s infinite both;
 }
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate both;
-	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate both;
-}
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes tracking-in-expand {
   0% {
