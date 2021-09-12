@@ -3,12 +3,8 @@
 @font-face{
 	src: url("Yipes.otf");
 	font-family: Yipes;
-	src: url("Garamond Premier Pro Display.otf");
-	font-family: Garamond;
-	src: url("/SVN-Felix Titling.otf");
-	font-family: Felix Titling;
-	src: url("SaolDisplay-LightItalic.ttf");
-	font-family: Saol;
+	src: url("Ogg-Roman.otf");
+	font-family: Ogg;
 }
 body{
 	background-color: #faf7f3;
@@ -20,7 +16,7 @@ html{
 /*mouse move*/
 .cursor {
     position: absolute;
-    background: white;
+    background: #f93700;
     width: 12px;
     height: 12px;
     border-radius: 100%;
@@ -84,10 +80,10 @@ html{
 	cursor: none}
 
 .maintitle{
-	font-family: Felix Titling;
+	font-family: ogg;
 	color: #343434;
 	text-transform: uppercase;
-	font-size: 44px;
+	font-size: 45px;
 	position: relative;	
 }
 .bigtitle{
@@ -606,7 +602,7 @@ hr{
 }
 .s2-item:nth-child(4){
 	grid-area: i4;
-	background: urL("New folder/29571231_434608123636913_4244523421911245164_n.jpg") center/cover
+	background: urL("29571231_434608123636913_4244523421911245164_n.jpg") center/cover
 }
 .s2-item:nth-child(5){
 	grid-area: i5;
@@ -656,7 +652,7 @@ hr{
 
 #sec3{
 	background-color: #141310;
-	height: 550px;
+	height: 530px;
 	padding: 60px 100px;
 	text-align: center;
 	position: relative;
@@ -665,6 +661,7 @@ hr{
 	color:white;
 	margin-left:3px;
 	letter-spacing: 2px;
+	line-height: 1.1
 }
 #sec3 .animateline{
 	width: 8%;
@@ -675,9 +672,7 @@ hr{
 	align-items: center;
 	justify-content: space-between;
 }
-.sec3-item .maintitle{
-	font-size: 32px;
-}
+
 .sec3-item{
 	width: calc(100% / 3 - 50px);
 	padding: 10px 40px 30px 40px; 
@@ -719,11 +714,11 @@ hr{
 	color: #f5f5f5;
 	z-index: 2;
 	position: relative;
-	font-size: 35px;
+	font-size: 34px;
 }
 .sec3-item .contenttext{
 	color: white;
-	margin-top: 20px;
+	margin-top: 10px;
 	z-index: 2;
 	position: relative;
 	letter-spacing: 1px;
@@ -731,14 +726,14 @@ hr{
 }
 #sec3 .arrow{
 	position: absolute;
-	bottom: 10%;
+	bottom: 12%;
 	left: 50%;
 	height: 10px;
 	transform: scale(1.3) translate(-50%);
  	transition: 0.2s linear;
 }
 #sec3 .arrow:hover{
-	transform: scale(1.5) translate(-45%)
+	transform: scale(1.7) translate(-45%)
 }
 
 
@@ -916,23 +911,22 @@ hr{
 	
 }
 .contact-header{
-	margin-top: 150px;
-	height: 530px;
+	margin-top: 200px;
+	height: 480px;
 	border-bottom: 1px solid black;
 	position: relative;
-	overflowx: hidden
 }
 .contact-header .mt{
 	height: 120px;
 	transform: rotate(90deg) ;
 	position: absolute;
-	bottom: 70px;
-	left: 31%;
+	bottom: 100px;
+	left: 33%;
 }
 .phone{
 	position: absolute;
-	right: 18%;
-	top: -55px;
+	right: 17%;
+	top: -105px;
 	height: 500px;
 	z-index: -1;
 }
@@ -966,17 +960,27 @@ hr{
   }
 }
 
-.header-1,.header-2  {
-	width: 35%;
+.header-1  {
+	width: 50%;
 	margin-left:  17%;
 	font-size: 75px!important;
-	letter-spacing: 2px!important;
-	line-height: 1.2!important;
+	letter-spacing: 1px!important;
+	line-height: 1.1!important;
 	margin-bottom: 0;
 	margin-top: 0;
-	font-family: Felix Titling!important;
+	font-family: Ogg;
 }
-
+.header-2  {
+	width: 50%;
+	margin-left:  17%;
+	font-size: 100px!important;
+	letter-spacing: 1px!important;
+	line-height: 1.2!important;
+	margin-bottom: 0;
+	margin-top: 10px;
+	font-family: Ogg;
+	text-transform: uppercase
+}
 .header-1 .letter,.header-2 .letter {
   display: inline-block;
 }
@@ -1159,13 +1163,13 @@ hr{
 	font-weight: 400;
 }
 .s6-1-1 .maintitle{
+	margin-top: 25px;
 	font-size: 100px;
-	line-height: 130px;
+	line-height: 100px;
 }
 .font-size{
-	font-size: 33px;
-	font-family: Garamond;
-	margin-top: 0px
+	font-size: 37px;
+	font-family: Ogg
 }
 .s6-1-2{
 	display: flex;
@@ -1186,8 +1190,9 @@ hr{
 .s6-1-2 p{
 	width: 60%;
 	font-size: 30px;
-	font-family: Garamond;
-	line-height: 1.3
+	font-family: Ogg;
+	line-height: 1.4;
+	letter-spacing: 1px
 }
 .s6-2{
 	display: flex;
@@ -1263,7 +1268,7 @@ hr{
 }
 .s6-3 .maintitle{
 	font-size: 87px;
-	line-height: 1.4;
+	line-height: 1.3;
 }
 .color{
 	color: #f93700
@@ -1317,17 +1322,16 @@ hr{
 .s6-4 .minititle{
 	font-size: 12px;
 	font-weight: 500;
-	margin-top:50px;
-	
+	margin-top:48px;
 }
 .s6-4 .maintitle{
-	font-size: 31px;
+	font-size: 35px;
+	letter-spacing: 2px;
 	position: relative;
-	cursor: pointer;
 }
 .s6-4 .maintitle:hover{
 	font-style: italic;
-	filter: brightness(80%)
+	filter: brightness(80%);
 }
 
 .s6-4 .maintitle:after{
@@ -1346,113 +1350,91 @@ hr{
 }
 .s6-5{
 	border-top: 1px solid black;
-	position: relative;
 	background: #141310;
-	--offset: 20vw;
-	--move-initial: calc(-25% + var(--offset));
-	--move-final: calc(-50% + var(--offset));
-	overflow: hidden;
+	height: 1900px;
+	border-bottom: 1px solid white
 }
 .s6-5 .minititle{
 	color:#f93700;
 	margin: auto;
 	text-align: center;
-	padding: 50px;
+	padding-bottom: 80px;
 	display: block;
 	border-bottom: 1px solid #999;
 }
-.keyword-item {
+
+.navigation-wrapper{
 	position: relative;
-	padding-left:50px;
-	border-bottom: 1px solid #999;
+	padding: 100px 0 50px;
+}
+.navigation-wrapper ul {
+	width: 85%;
+	padding: 50px 0px 0px;
+  	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%)
 }
 
-.keyword-item-link {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	color:#FBFBFB;
-	font-weight: 200!important;
-	font-size: 110px!important;
-	transition: opacity 0.3s;
+.navigation-item {
+  display: block;
+  user-select: none;
+  margin: 40px 0;
+	padding: 0 30px;
+	border-bottom: 1px solid white;
+}
+.s6-5 a {
 	font-family: Yipes;
+  	font-size: 100px;
+	line-height: 1.8;
+ 	text-decoration: none;
+}
+.s6-5 span {
+  position: relative;
+  display: block;
+	color: #faf7f3;
 }
 
-.keyword-item-link::before {
-	position: absolute;
-	left: 0;
-	pointer-events: none;
+.navigation-item span:before {
+  width: 0;
+  color: #f93700;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
 }
 
-.keyword-item-link:hover {
-	transition-duration: 0.1s;
-	opacity: 0;
+.navigation-item span:hover:before {
+  width: 100%;
 }
 
-.keyword-item-img {
-	pointer-events: none;
-	position: absolute;
-	height: 50vh;
-	max-height: 400px;
-	opacity: 0;
-	left: 100%;
-	top: 20%;
-	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
-}
-.keyword-item-img:last-child{
-	top: 0%!important;
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
 }
 
-.keyword-item-link:hover + .keyword-item-img {
-	opacity: 1;
-	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
-	transition: all 0.8s;
+.project-preview {
+  	position: fixed;
+  	top: 17%;
+  	left: 50%;
+	width: 0;
+  	height: 400px;
+  	background-size: cover;
 }
 
-.marquee {
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	mix-blend-mode: difference;
-}
 
-.marquee__inner {
-	display: flex;
-	position: relative;
-	animation: marquee 4s linear infinite;
-	opacity: 0;
-	transition: opacity 0.1s;
-	
-}
 
-.keyword-item-link:hover ~ .marquee .marquee__inner {
-	opacity: 1;
-	transition-duration: 0.4s;
-}
-.keyword-item-link, .marquee span {
-	padding: 0 20px;   /* khoảng cách chữ chạy*/
-	font-weight: 900;
-	line-height: 2;
-}
 
-.marquee span {
-	font-style: italic;
-	font-size: 130px;
-	font-weight: 400;
-	color:#f93700;
-	font-family: Yipes;
-}
 
-@keyframes marquee {
-	0% {
-		transform: translate3d(var(--move-initial), 0, 0);
-	}
 
-	100% {
-		transform: translate3d(var(--move-final), 0, 0);
-	}
-}
+
+
+
+
+
 
 
 
@@ -1476,7 +1458,7 @@ hr{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), URL("https://data.whicdn.com/images/347511979/original.gif") center/cover;
+	background: #141310;
 	background-attachment: fixed;
 	height: 100VH;
 	text-align: center;
@@ -1485,7 +1467,7 @@ hr{
 .muiten{
 	position: absolute;
 	bottom:130px;
-	left:47%;
+	left: 47%;
 	transform: rotate(90deg);
 }
 .top img{height:10px;}
@@ -1703,7 +1685,8 @@ hr{
 	flex-direction: column;
 }
 .S8-1 .maintitle{
-	font-size: 100px;
+	font-size: 130px;
+	line-height: 1.1!important;
 	margin-bottom: 40px;
 }
 .S8-1 img{
@@ -1778,7 +1761,7 @@ hr{
 	padding: 100px 220px 100px 250px;
 	grid-template-columns: 26% 29% 26%;
 	grid-gap: 80px;
-	grid-template-rows: 230px 200px 110px 130px 150px 150px 230px 50px 250px;
+	grid-template-rows: 230px 200px 110px 130px 150px 150px 230px 0px 250px;
 	grid-template-areas:
 	"p1 p2 p3"
 	"p1 p4 p3"
@@ -2109,3 +2092,15 @@ hr{
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
