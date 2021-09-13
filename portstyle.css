@@ -534,7 +534,7 @@ hr{
 }
 
 #About .contenttext:hover:after{
-	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - chính là thiết kế đồ họa.";
+	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - thiết kế đồ họa. Hiện tại mục tiêu của mình là trở thành UX/UI designer.";
 	position: absolute;
 	top:0;
 	right:0;
@@ -783,31 +783,26 @@ hr{
 }
 .s4-img:hover img {
     -webkit-animation: kenburns-bottom 1s ease-out both;
-	        animation: kenburns-bottom 1s ease-out both;
 }
-
 @keyframes kenburns-bottom {
   0% {
     -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
     -webkit-transform-origin: 50% 84%;
-            transform-origin: 50% 84%;
   }
   100% {
     -webkit-transform: scale(1.1) translateY(15px);
-            transform: scale(1.1) translateY(15px);
     -webkit-transform-origin: bottom;
-            transform-origin: bottom;
   }
 }
 
-
-.s4-item:hover .s4-img img {
-    opacity: 0.8;
-    transform: scale(1.2);
-}
 .sec4-item .minititle{
 	margin-bottom: 0;
+	transform: scale(1);
+	transition: all 0.3s ease
+}
+.sec4-item .minititle:hover{
+	filter: brightness(150%);
+	transform: scale(1.05);
 }
 #sec4 .dec{
 	background-color:black;
@@ -1161,7 +1156,7 @@ hr{
 }
 .s6-1-2 p{
 	width: 60%;
-	font-size: 30px;
+	font-size: 28px;
 	font-family: Ogg;
 	line-height: 1.4;
 	letter-spacing: 1px
@@ -1191,7 +1186,7 @@ hr{
 	cursor: pointer;
 }
 .s6-2-1 .contenttext:hover:after{
-	content: "Minh sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - chính là thiết kế đồ họa. Với số tuổi không còn nhỏ thì việc bắt đầu muộn cũng không phải là điều gì không tốt, bởi khi ấy mình biết được rằng bản thân đã không còn nhiều thời gian như các bạn trẻ bây giờ nữa, mình sẽ phải cố gắng phấn đấu nhiều hơn để không lãng phí thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn theo sau và ủng hộ cho quyết định quan trọng lần này của mình.";
+	content: "Minh sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - chính là thiết kế đồ họa. Và hiện tại mục tiêu mình muốn hướng đến là trở thành UX/UI designer. Với số tuổi không còn nhỏ thì việc bắt đầu muộn cũng không phải là điều gì không tốt, bởi khi ấy mình biết được rằng bản thân đã không còn nhiều thời gian như các bạn trẻ bây giờ nữa, mình sẽ phải cố gắng phấn đấu nhiều hơn để không lãng phí thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn theo sau và ủng hộ cho quyết định quan trọng lần này của mình.";
 	position: absolute;
 	top:0;
 	right:0;
@@ -1305,7 +1300,6 @@ hr{
 	font-style: italic;
 	filter: brightness(80%);
 }
-
 .s6-4 .maintitle:after{
 	content: "";
 	position: absolute;
@@ -1365,7 +1359,6 @@ hr{
   	position: relative;
   	display: block;
 	color: #faf7f3;
-	
 }
 
 .navigation-item span:before {
@@ -1428,23 +1421,22 @@ hr{
 	text-align: center;
 	overflow: hidden;
 }
-.muiten{
+.top .muiten{
 	position: absolute;
-	bottom:20%;
+	bottom:22%;
 	left: 46%;
-	transform: rotate(90deg) scale(1);
-	transition: 0.4s ease;
-	height:10px;
+	transform: rotate(90deg) scale(0.7);
+	transition: 0.5s ease;
 }
 .muiten:hover{
-	 transform: rotate(90deg) scale(1.2)
+	 transform: rotate(90deg) scale(1)
 }
 .deconstructed {
 	position: relative;
 	margin: 0px 400PX 0;
 	color: transparent;
 	font-family: Ogg;
-	font-size: 76PX;
+	font-size: 78PX;
 	line-height: 1.2
 }
 
@@ -1664,6 +1656,9 @@ hr{
 
 
 
+
+
+
 #sec9{
 	width: 100%;
 }
@@ -1673,7 +1668,6 @@ hr{
 }
 .s9-l p{
 	font-size: 70px!important;
-
 }
 .s9-r{
 	position: relative;
@@ -1712,11 +1706,10 @@ hr{
 	right:0;
 	left:0;
 	bottom: 0;
-	background: linear-gradient(rgba(0,0,0,0.2),rgba(49,48,48,0.70)), url("241632543_257349132924121_8688549530935736333_n.jpg") center/cover;;
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(49,48,48,0.7)), url("241632543_257349132924121_8688549530935736333_n.jpg") center/cover;;
 	opacity: 0;
 	transition: all 0.5s ease;
 	transform: translateX(-50%);
-	
 }
 .s9-img:hover:after{
 	opacity: 1;
@@ -1785,7 +1778,6 @@ hr{
 .grid-img {
 	display: flex;
 	flex-direction: column;
-	
 }
 .grid-img .tagheart{
 	display: flex;
@@ -1815,13 +1807,11 @@ hr{
 	opacity: 1;
 	z-index: 10;
 }
-
 .demo-img{
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
-
 .grid-img:nth-child(1){
 	grid-area: p1;}
 .grid-img:nth-child(2){
@@ -1855,6 +1845,11 @@ hr{
 .grid-img:nth-child(16){
 	grid-area: p16;}
 
+
+
+
+
+
 /* header photography - codepen */
 :root{
     --bg-color:#faf7f3;
@@ -1868,16 +1863,16 @@ hr{
 	letter-spacing: 5px;
 	color: #000;
 	background-color: var(--bg-color);
-	font-family: Yipes;
+	font-family: ogg;
 	border-bottom: 1px solid black;
 	}
 .header-top em{
-	font-size: 80px;
+	font-size: 50px;
+	letter-spacing: 3px;
 }
 .header-top h1{
     font-size: 110px;
     font-weight: normal;
-	
 }
 .home-title span{
     position: relative;
@@ -1896,9 +1891,7 @@ hr{
     animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
 	animation-delay: 0s;
     transform: translateX(-101%);
-	
 }
-
 .home-title span::before{
     content: '';
     position: absolute;
@@ -1931,7 +1924,9 @@ hr{
 
 
 
-/*homepage header - tweenmax*/
+
+
+/*header homepage - tweenmax*/
 .container {
 	width: 100%;
 	height: 100vh;
