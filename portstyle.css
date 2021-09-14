@@ -412,7 +412,7 @@ hr{
 
 #About{
 	background: #141310;
-	padding: 50px 350px;
+	padding: 50px 23%;
 	height: 550px;
 	letter-spacing: 1.5px;
 	line-height: 1.8;
@@ -478,6 +478,7 @@ hr{
 }
 .me-img:hover img{
    	transform: translateX(20px);
+	filter:grayscale(1)
 }
 .me-img .social-links{
 	position: absolute;
@@ -569,9 +570,9 @@ hr{
 }
 .sec2-img{
 	width: 100%;
-	padding: 0px 200px 30PX;
+	padding: 0px 14% 40PX ;
 	display:grid;
-	grid-template-columns: 1fr 1.2fr 1fr;
+	grid-template-columns: 1fr 1.3fr 1fr;
 	grid-gap: 20px;
 	grid-template-rows: 120px 100px 100px 120px;
 	grid-template-areas:
@@ -880,6 +881,11 @@ hr{
 }
 .ft-col:nth-child(3) i{
 	margin-left: 5px;
+	font-size: 17px
+}
+.ft-col:nth-child(3) i:hover{
+		-webkit-animation: jello-horizontal 1s both;;
+	color:#f93700
 }
 .ft-col:nth-child(3) .contenttext{
 	margin-top: 10px;
@@ -1709,7 +1715,7 @@ hr{
 	right:0;
 	left:0;
 	bottom: 0;
-	background: linear-gradient(rgba(0,0,0,0),rgba(49,48,48,0.5)), url("241632543_257349132924121_8688549530935736333_n.jpg") center/cover;;
+	background: linear-gradient(rgba(0,0,0,0),rgba(220,113,74,0.3)), url("241632543_257349132924121_8688549530935736333_n.jpg") center/cover;;
 	opacity: 0;
 	transition: all 0.5s ease;
 	transform: translateX(-50%);
@@ -1763,10 +1769,10 @@ hr{
 }
 .grid-demo{
 	display: grid;
-	padding: 100px 220px 100px 250px;
-	grid-template-columns: 26% 29% 26%;
+	padding: 100px 16% 100px 17%;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 80px;
-	grid-template-rows: 230px 200px 110px 130px 150px 150px 230px 0px 250px;
+	grid-template-rows: 230px 200px 110px 130px 150px 150px 230px 50px 200px;
 	grid-template-areas:
 	"p1 p2 p3"
 	"p1 p4 p3"
