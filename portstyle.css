@@ -238,7 +238,7 @@ html{
 	letter-spacing: 2px;
 }
 .header{
-	height: 100vh;
+	height: 753px;
 	position: relative;
 	overflow: hidden
 }
@@ -274,7 +274,7 @@ html{
 	background:#faf7f3;
 	visibility: hidden;
 	transform: translateY(40%);
-	transition: 0.3s ease/*ko dùng visibility: hidden thì sẽ xổ dropdown khi rê chuột ra ngoài */
+	transition: 0.3s ease
 }
 .nav ul:before{
 	content:"";
@@ -1422,7 +1422,7 @@ hr{
 	justify-content: center;
 	background: #141310;
 	background-attachment: fixed;
-	height: 100VH;
+	height: 753px;
 	text-align: center;
 	overflow: hidden;
 }
