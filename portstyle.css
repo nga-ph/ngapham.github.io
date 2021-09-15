@@ -380,6 +380,7 @@ html{
 	justify-content: center;
 	align-items: center;
 	float:right;
+	margin-top:2px;
 	border:0;
 	transition: 0.3s ease;
 }
@@ -1120,14 +1121,14 @@ hr{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 90px 250px;
+	padding: 7% 20% 5% 18%;
 	overflow: hidden;
 }
 .s6-1-1 img{
 	height: 250px;
 	width: 420px;
 	object-fit: cover;
-	margin-right: 100px;
+	margin-right: 80px;
 }
 .s6-1-1 .minititle{
 	margin-bottom: 5px;
@@ -1146,7 +1147,7 @@ hr{
 .s6-1-2{
 	display: flex;
 	justify-content: space-between;
-	padding: 0px 200px 80px 200px;
+	padding: 0% 10% 2% 15%;
 }
 .s6-1-2 hr{
 	border-top: 1px solid black;
@@ -1180,7 +1181,7 @@ hr{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 0 140px 80px 130px;
+	padding: 0 8% 4% 7% ;
 }
 .s6-2-1 p{
 	color:white;
