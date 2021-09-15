@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Mrs+Saint+Delafield&family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap');
 @font-face{
-	src: url(Yipes.ttf");
-	font-family: Yipes;
 	src: url("Ogg-Roman.otf");
 	font-family: Ogg;
 }
+@font-face{
+	src: url("Yipes.ttf");
+	font-family: Yipes;}
 body{
 	background-color: #faf7f3;
 	overflow-x: hidden
