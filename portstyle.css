@@ -5,6 +5,10 @@
 	font-family: Yipes;
 }
 @font-face{
+	src: url("Montserrat-Black.ttf");
+	font-family: Montserrat;
+}
+@font-face{
 	src: url("Ogg-Roman.otf");
 	font-family: Ogg;
 }
