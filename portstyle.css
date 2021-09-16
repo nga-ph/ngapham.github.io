@@ -1778,7 +1778,7 @@ hr{
 	padding: 100px 16% 100px 17%;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 80px;
-	grid-template-rows: 230px 200px 110px 130px 150px 150px 230px 50px 200px;
+	grid-template-rows: 230px 220px 110px 130px 150px 150px 230px 50px 200px;
 	grid-template-areas:
 	"p1 p2 p3"
 	"p1 p4 p3"
