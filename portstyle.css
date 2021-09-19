@@ -255,7 +255,6 @@ html{
 	position: relative;
 	z-index: 1000;
 }
-
 .nav li a{
 	font-family: 'Encode Sans', sans-serif;
 	text-transform: uppercase;
@@ -267,6 +266,9 @@ html{
 }
 .nav li a:hover, .nav .search-box:hover i{
   	transform: scale(1.04);
+	color:  #f93700;
+}
+.nav li li:hover .fas{
 	color:  #f93700;
 }
 .nav ul{
@@ -923,10 +925,10 @@ hr{
 	position: relative;
 }
 .contact-header .mt{
-	height: 120px;
+	height: 100px;
 	transform: rotate(90deg) ;
 	position: absolute;
-	bottom: 100px;
+	bottom: 30%;
 	left: 33%;
 }
 .phone{
@@ -1152,7 +1154,7 @@ hr{
 .s6-1-2{
 	display: flex;
 	justify-content: space-between;
-	padding: 0% 10% 2% 15%;
+	padding: 0% 10% 5% 15%;
 }
 .s6-1-2 hr{
 	border-top: 1px solid black;
@@ -1706,7 +1708,9 @@ hr{
 	transform: translate(-50%) scale(0);
 	opacity: 0;
 	transition: 0.5s ease;
-	color:white
+	color: white;
+	width: 100%;
+	line-height: 1.6;
 }
 .s9-img:hover .minititle{
 	opacity: 1;
