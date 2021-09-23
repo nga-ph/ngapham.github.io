@@ -233,7 +233,7 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding: 0 250px;
   	height: 70px;
 }
 .logo{
@@ -1126,7 +1126,7 @@ hr{
 .s6-1-1{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 7% 20% 5% 18%;
 	overflow: hidden;
 }
@@ -1153,13 +1153,12 @@ hr{
 .s6-1-2{
 	display: flex;
 	justify-content: space-between;
-	padding: 0% 10% 5% 15%;
+	padding: 0% 20% 6% 18% ;
 }
 .s6-1-2 hr{
 	border-top: 1px solid black;
 	border-bottom: 0;
 	width: 250px;
-	margin-left: 50px;
 	margin-top:20px;
 }
 .s6-1-2 .dec{
@@ -2018,10 +2017,7 @@ hr{
 	object-fit: cover;
 	border-radius: 100%;
 }
-.noborder{
-	border-bottom: none;
-	padding: 20px 150px;
-}
+
 .box{
 	background: #faf7f3;
 	opacity: 1;
@@ -2227,12 +2223,19 @@ hr{
 .delay{
  	animation: tilt-in-right-1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s alternate both;
 }
-
+.noborder{
+	border-bottom: none;
+	padding: 0 150px
+}
 
 @media screen and (max-width: 1366px){
-	.noborder{
+	.navbar{
 		padding: 0 40px;
-		font-size: 4px;
+		width: 100%;
+		z-index: 10000;
+	}
+	.over{
+		overflow-x: hidden
 	}
 	#About{
 		padding: 20px 90px;
@@ -2253,5 +2256,81 @@ hr{
 	}
 	.ft-t,.ft-b{
 		padding: 40px 80px;
+	}
+	.s6-1-1, .s6-1-2{
+		padding: 50px;
+	}
+	.s6-1-2{
+		padding-bottom: 90px;
+	}
+	.s6-1-1 img{
+		height:250px;
+		width: 350px;
+		margin-right: 40px;
+	}
+	.s6-1-1 div{
+		padding-right: 20px;
+	}
+	.s6-1-2 hr{margin-left: 0;}
+	.s6-2-1{
+		padding: 40px
+	}
+	.s7-item{
+		height:400px;
+	}
+	.s7-col .maintitle{
+		font-size: 23px;
+		font-weight: 600
+	}
+.s7-row img{
+	width: 165px;
+	height: 250px;
+	object-fit: cover;
+}
+.b-img{
+	width: 330px!important;
+}
+.s7-item1 .s7-row img {
+    height: 170px;
+	width: 300px}
+	
+.s9-img{
+	height: 500px;
+    width: 630px;
+	}
+	.grid-demo{
+		padding: 80px  40px;
+		grid-row-gap: 80px;
+		grid-column-gap: 50px
+	}
+	
+	.header-1,.header-2{
+		
+		margin-left: 10%; width: 100%;
+		mix-blend-mode: color-burn;
+	}
+
+	.header-1{
+		margin-top: 18%;
+	}
+	.phone{
+		right: 10%;
+		top: 80px;
+		height: 450px
+	}
+	.s5-m{
+		flex:1.5
+	}
+	.input-login {
+		padding: 100px;
+		width: 100%
+	}
+	.contact-header{
+		overflow-x: hidden;
+		margin-top: 0;
+		height: 620px
+	}
+	.contact-header .mt{
+		bottom: 17%
 	}
 }
