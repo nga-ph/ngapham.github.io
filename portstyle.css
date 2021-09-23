@@ -682,7 +682,7 @@ hr{
 }
 
 .sec3-item{
-	width: calc(100% / 3 - 50px);
+	width: calc(100% / 3 - 30px);
 	padding: 10px 40px 30px 40px; 
 	position: relative;
 	overflow: hidden;
@@ -836,7 +836,6 @@ hr{
 
 
 .ft-t{
-	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items:flex-end;
@@ -2230,13 +2229,14 @@ hr{
 }
 
 
-@media screen and (max-width: 812px){
+@media screen and (max-width: 1366px){
 	.noborder{
-		padding: 0 20px;
+		padding: 0 40px;
 		font-size: 4px;
 	}
 	#About{
-		padding: 50px;
+		padding: 20px 90px;
+		height:430px;
 	}
 	.sec2-img{
 		padding: 10px 20px;
@@ -2246,5 +2246,12 @@ hr{
 	}
 	.sec3-item {
 		width: 100%;
+	}
+	.wrapper-img{
+		width: 600px;
+		height: 600px
+	}
+	.ft-t,.ft-b{
+		padding: 40px 80px;
 	}
 }
