@@ -233,7 +233,7 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 250px;
+	padding: 0 20px;
   	height: 70px;
 }
 .logo{
@@ -2021,7 +2021,7 @@ hr{
 }
 .noborder{
 	border-bottom: none;
-	padding: 20px 150px!important;
+	padding: 20px 150px;
 }
 .box{
 	background: #faf7f3;
@@ -2227,4 +2227,24 @@ hr{
 
 .delay{
  	animation: tilt-in-right-1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s alternate both;
+}
+
+
+@media screen and (max-width: 812px){
+	.noborder{
+		padding: 0 20px;
+		font-size: 4px;
+	}
+	#About{
+		padding: 50px;
+	}
+	.sec2-img{
+		padding: 10px 20px;
+	}
+	#sec3{
+		padding: 50px 10px;
+	}
+	.sec3-item {
+		width: 100%;
+	}
 }
