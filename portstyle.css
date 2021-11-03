@@ -244,7 +244,7 @@ html{
 	letter-spacing: 2px;
 }
 .header{
-	height: 753px;
+	height: 100vh;
 	position: relative;
 	overflow: hidden
 }
@@ -1431,7 +1431,7 @@ hr{
 	justify-content: center;
 	background: #141310;
 	background-attachment: fixed;
-	height: 753px;
+	height: 100vh;
 	text-align: center;
 	overflow: hidden;
 }
