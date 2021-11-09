@@ -83,7 +83,8 @@ html{
 	color: #343434;
 	list-style: none;
 	text-decoration: none;
-	cursor: none}
+	/* cursor: none */
+}
 
 .maintitle{
 	font-family: ogg;
@@ -1787,7 +1788,7 @@ hr{
 }
 .grid-demo{
 	display: grid;
-	padding: 100px 16% 100px 17%;
+	padding: 200px 16% 200px 17%;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 80px;
 	grid-template-rows: 230px 220px 110px 130px 150px 150px 230px 50px 200px;
