@@ -540,7 +540,7 @@ hr{
 }
 #About .contenttext{
 	color:white;
-	text-align: justify;
+	/* text-align: justify; */
 	position: relative
 }
 #About .link {
@@ -548,7 +548,7 @@ hr{
 }
 
 #About .contenttext:hover:after{
-	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - thiết kế đồ họa. Hiện tại mục tiêu của mình là trở thành UX/UI designer.";
+	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Hiện tại mục tiêu của mình là trở thành UI/UX designer chuyên nghiệp";
 	position: absolute;
 	top:0;
 	right:0;
