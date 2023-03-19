@@ -19,6 +19,10 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+.noborder{
+	border: none !important;
+}
 /*mouse move*/
 .cursor {
     position: absolute;
@@ -536,7 +540,7 @@ hr{
 }
 #About .contenttext{
 	color:white;
-	text-align: justify;
+	/* text-align: justify; */
 	position: relative
 }
 #About .link {
@@ -544,7 +548,7 @@ hr{
 }
 
 #About .contenttext:hover:after{
-	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - thiết kế đồ họa. Hiện tại mục tiêu của mình là trở thành UX/UI designer.";
+	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Hiện tại mục tiêu của mình là trở thành UI/UX designer chuyên nghiệp";
 	position: absolute;
 	top:0;
 	right:0;
@@ -1043,7 +1047,7 @@ hr{
 .input-field
 {
 	width: 100%;
-	padding: 8px 0!important;
+	padding: 9px 0!important;
 	margin: 5px 0;
 	border-left: 0;
 	border-top: 0;
@@ -1614,6 +1618,8 @@ hr{
 	border-bottom: 1px solid black;
 	height: 550px;
 }
+.s7i{height: 450px!important;}
+
 .s7-item1 .s7-row{
 	flex:1;
 	width: 100%;
@@ -2238,16 +2244,20 @@ hr{
 	border-bottom: none;
 	padding: 0 150px
 }
-
+@media (max-width: 1020px){
+.b-img{
+	width: 250px!important;
+}
+}
 @media screen and (max-width: 1366px){
 	.navbar{
 		padding: 0 40px;
 		width: 100%;
 		z-index: 10000;
 	}
-	.over{
+	/* .over{
 		overflow-x: hidden;
-	}
+	} */
 	#About{
 		padding: 20px 110px;
 		height:430px;
@@ -2298,9 +2308,13 @@ hr{
 	height: 250px;
 	object-fit: cover;
 }
-.b-img{
-	width: 340px!important;
+.s7-l{
+	display:none
 }
+
+/* .b-img{
+	width: 250px!important;
+} */
 .s7-item1 .s7-row img {
     height: 170px;
 	width: 300px}
