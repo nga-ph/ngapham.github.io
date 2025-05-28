@@ -133,7 +133,7 @@ html{
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	margin-bottom: 40px;
+	margin-bottom: 36px!important;
 }
 .link a{
 	font-size: 14px;
@@ -475,6 +475,12 @@ hr{
 	align-items: center;
 	justify-content: space-between;
 }
+
+.text1:hover{
+color: rgb(0, 0, 0)!important;
+background-color: white!important;
+
+}
 .me-img img{
 	height: 150px;
 	width: 200px;
@@ -548,7 +554,7 @@ hr{
 }
 
 #About .contenttext:hover:after{
-	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Hiện tại mục tiêu của mình là trở thành UI/UX designer chuyên nghiệp";
+	content: "Xin chào! Mình là Nga Phạm, mình sinh ra và lớn lên ở Sài Gòn.Với 3 năm làm việc trong môi trường product, tôi đã có cơ hội tham gia vào toàn bộ quy trình triển khai sản phẩm: từ việc hỗ trợ phân tích nghiệp vụ, xây dựng flow, thiết kế UI, đến kiểm thử giao diện và cải tiến trải nghiệm người dùng. Là một UX/UI designer có lối tư duy cải tiến liên tục và luôn đặt tâm huyết của mình vào mỗi thiết kế, tôi tin rằng mình có thể mang lại giá trị thiết thực cho bất cứ doanh nghiệp nào mà mình có cơ hội làm việc cùng.";
 	position: absolute;
 	top:0;
 	right:0;
@@ -570,7 +576,7 @@ hr{
 
 
 #sec2{
-	padding: 50px 0px;
+	padding: 80px 0px;
 	text-align: center;	
 }
 #sec2 .dec-text{
@@ -665,8 +671,8 @@ hr{
 
 #sec3{
 	background-color: #141310;
-	height: 520px;
-	padding: 60px 100px;
+	/* height: 560px; */
+	padding: 80px ;
 	text-align: center;
 	position: relative;
 }
@@ -683,7 +689,8 @@ hr{
 	width: 8%;
 }
 .sec3-content{
-	margin-top:20px;
+	margin-top:20px; 
+	margin-bottom:28px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -691,8 +698,7 @@ hr{
 
 .sec3-item{
 	width: calc(100% / 3 - 30px);
-	/* max-width: 400px; */
-	padding: 10px 40px 30px 40px; 
+	padding: 20px 40px 30px 40px; 
 	position: relative;
 	overflow: hidden;
 }
@@ -716,7 +722,7 @@ hr{
 	font-family: Montserrat;
 	font-size: 80px;
 	font-weight: 800;
-	color:#f5f5f5;
+	color:white;
 	opacity: 0.05;
 	transform: translateY(50px);
 	transition: 0.4s linear;
@@ -734,7 +740,7 @@ hr{
 	font-size: 34px;
 }
 .sec3-item .contenttext{
-	color: white;
+	/* color: white; */
 	margin-top: 10px;
 	z-index: 2;
 	position: relative;
@@ -781,7 +787,7 @@ hr{
 	flex-direction: column;
 	border-left: 1px solid black;
 	position: relative;
-	height:800px;
+	height:780px;
 	text-align: center;
 	padding: 50px 20px;
 }
@@ -830,7 +836,7 @@ hr{
 	font-weight: 500;
 	font-size: 35px;
 	letter-spacing: 2px;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	transition: all 0.3s linear;
 }
 #sec4 .dec-text:hover{
@@ -838,7 +844,8 @@ hr{
 	transform: scale(1.1)
 }
 
-
+.s4-col .minititle 
+{margin-bottom: 0px!important;}
 
 
 
@@ -1114,7 +1121,7 @@ hr{
 	background: black;
 	color:white;
 }
-.submit-btn:after{
+/* .submit-btn:after{
 	position: absolute;
 	content:"";
 	border-bottom: 1px solid black;
@@ -1122,28 +1129,29 @@ hr{
 	left: 50%;
 	bottom: -7px;
 	transform: translate(-50%,-50%);
-}
+} */
 
-
-
-
+/* #sec3 .contenttext
+{ color:white;
+} */
 
 
 
 
 .s6-1{
-	padding: 7% 17% 5% 17%;
+	padding: 6% 13% 5% 13%;
 }
 .s6-1-1{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	
 	overflow: hidden;
 }
 
 .s6-1-1 img{
-	height:38vh;
-	width: 28vw;
+	height:400px;
+	width:600px;
+	margin-right: 100px;
 	object-fit: cover;
 
 }
@@ -1154,9 +1162,9 @@ hr{
 	font-weight: 400;
 }
 .s6-1-1 .maintitle{
-	margin-top: 25px;
+	/* margin-top: 20px; */
 	font-size: 100px;
-	line-height: 100px;
+	line-height: 110px;
 }
 .font-size{
 	font-size: 37px;
@@ -1209,7 +1217,7 @@ hr{
 	cursor: pointer;
 }
 .s6-2-1 .contenttext:hover:after{
-	content: "Minh sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình - chính là thiết kế đồ họa. Và hiện tại mục tiêu mình muốn hướng đến là trở thành UX/UI designer. Với số tuổi không còn nhỏ thì việc bắt đầu muộn cũng không phải là điều gì không tốt, bởi khi ấy mình biết được rằng bản thân đã không còn nhiều thời gian như các bạn trẻ bây giờ nữa, mình sẽ phải cố gắng phấn đấu nhiều hơn để không lãng phí thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn theo sau và ủng hộ cho quyết định quan trọng lần này của mình.";
+	/* content: "Minh sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Và hiện tại mục tiêu mình muốn hướng đến là trở thành UX/UI designer. Với số tuổi không còn nhỏ thì việc bắt đầu muộn cũng không phải là điều gì không tốt, bởi khi ấy mình biết được rằng bản thân đã không còn nhiều thời gian như các bạn trẻ bây giờ nữa, mình sẽ phải cố gắng phấn đấu nhiều hơn để không lãng phí thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn theo sau và ủng hộ cho quyết định quan trọng lần này của mình."; */
 	position: absolute;
 	top:0;
 	right:0;
@@ -1340,7 +1348,7 @@ hr{
 .s6-5{
 	border-top: 1px solid black;
 	background: #141310;
-	height: 1230px;
+	height: 1100px;
 	border-bottom: 1px solid white
 }
 .s6-5 .minititle{
@@ -1440,7 +1448,7 @@ hr{
 	justify-content: center;
 	background: #141310;
 	background-attachment: fixed;
-	height: 100vh;
+	height: 800px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -1456,7 +1464,7 @@ hr{
 }
 .deconstructed {
 	position: relative;
-	margin: 0px 400PX 0;
+	
 	color: transparent;
 	font-family: Ogg;
 	font-size: 78PX;
@@ -1571,6 +1579,7 @@ hr{
 	width: 250px;
 	height: 350px;
 	object-fit: cover;
+
 }
 .b-img{
 	width: 530px!important;
@@ -1583,16 +1592,16 @@ hr{
 	height: 450px;
 }
 .s7-col{
-	flex: 1;
+	flex:2;
 	text-align: center;
 }
 .s7-col .maintitle{
 	margin: 6px;
 }
 .tz-gallery{
-	flex: 2;
-
+	flex:3;
 }
+
 .tz-gallery .row{
 	display: flex;
 	/* align-items: center;
@@ -1601,6 +1610,7 @@ hr{
 .tz-gallery .row div{
 	margin: 0 10px;
 }
+
 .s7-r button{
 	width: 170px;
 	margin-top: 0;
@@ -1617,24 +1627,27 @@ hr{
 	align-items: center;
 	flex-direction: column;
 	border-bottom: 1px solid black;
-	height: 550px;
+	/* height: 550px; */
 }
-.s7i{height: 450px!important;}
 
 .s7-item1 .s7-row{
 	flex:1;
+	height: 250px;
 	width: 100%;
 	display: flex;
+	
 }
 .s7-item1 .s7-col{
 	width: 100%;
 	flex:0;
-	padding: 20px;
+	padding: 30px;
 	border-bottom: 1px solid black;
 }
+
+
 .s7-item1 .s7-row img{
-	height: 220px;
-	width: 400px;
+	height: 240px;
+	width: 380px;
 	object-fit: cover;
 }
 .s7-item1 .web{
@@ -1645,7 +1658,8 @@ hr{
 	flex-direction: column;
 	border-right: 1px solid black;
 	position: relative;
-	height: 100%
+	height: 100%;
+	padding: 52px;
 }
 .s7-item1 .web:nth-child(2){
 	border-right: none;
@@ -1656,7 +1670,7 @@ hr{
 .web button{
 	margin:0;
 }
-#sec7 img:hover{ 
+#sec7 .imghover:hover{ 
 	animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	transition: 1s ease
 }
