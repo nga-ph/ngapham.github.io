@@ -22,6 +22,7 @@ html{
 
 .noborder{
 	border: none !important;
+	display: flex;justify-content: center;  align-items: center
 }
 /*mouse move*/
 .cursor {
@@ -232,14 +233,14 @@ html{
 #btntop:hover:after{
 	display: block;
 }
+
 .navbar{
-	border-bottom: 1px solid #343434;
-  	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 250px;
-  	height: 70px;
+	/* padding: 0 250px; */
+	width: 1280px;
+  	height: 70px
 }
 .logo{
 	font-family: Yipes;
@@ -852,12 +853,13 @@ background-color: white!important;
 
 
 .ft-t{
+	width: 1280px;
 	display: flex;
 	justify-content: space-between;
 	align-items:flex-end;
-	height: 350px;
-	padding: 40px 250px;
-	border-top: 1px solid black;
+	/* height: 350px; */
+	padding: 48px 0;
+
 
 }
 .ft-t .bigtitle{
@@ -915,11 +917,11 @@ background-color: white!important;
 	font-size: 12px;
 }
 .ft-b{
+	width: 1280px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-top: 1px solid black;
-	padding:0 250px;
+
 	height: 50px;
 }
 .ft-b .contenttext:nth-child(2){
@@ -935,20 +937,21 @@ background-color: white!important;
 }
 .contact-header{
 	margin-top: 200px;
-	height: 480px;
-	border-bottom: 1px solid black;
-	position: relative;
+	/* align-items: center; */
+	height: 460px;
+	/* position: relative; */
+	width: 1280px;
 }
 .contact-header .mt{
 	height: 100px;
 	transform: rotate(90deg) ;
 	position: absolute;
 	bottom: 30%;
-	left: 33%;
+	left: 50%;
 }
 .phone{
 	position: absolute;
-	right: 17%;
+	right: 17%; 
 	top: -105px;
 	height: 500px;
 	z-index: -1;
@@ -956,19 +959,17 @@ background-color: white!important;
 
 
 .header-1  {
-	width: 50%;
-	margin-left:  17%;
-	font-size: 75px!important;
+	font-size: 60px!important;
 	letter-spacing: 1px!important;
-	line-height: 1.1!important;
 	margin-bottom: 0;
 	margin-top: 0;
 	font-family: Ogg;
+	text-align: center;
 }
 .header-2  {
-	width: 50%;
-	margin-left:  17%;
-	font-size: 100px!important;
+
+	text-align: center;
+	font-size: 140px!important;
 	letter-spacing: 1px!important;
 	line-height: 1.2!important;
 	margin-bottom: 0;
@@ -1139,23 +1140,26 @@ background-color: white!important;
 
 
 .s6-1{
-	padding: 6% 13% 5% 13%;
+	padding-top: 100px;	
+	padding-bottom: 100px;
 }
 .s6-1-1{
-	display: flex;
-	align-items: center;
-	
-	overflow: hidden;
+	max-width: 1280px!important;
+ display: flex;
+  justify-content: center; /* Canh ngang */
+  align-items: center;     /* Canh dọc */
 }
 
 .s6-1-1 img{
-	height:400px;
-	width:600px;
+	flex:1;
+		justify-content: space-between;
+	height:380px;
+	width: 500px;
 	margin-right: 100px;
 	object-fit: cover;
 
 }
-
+.s6-1-1 .titt{flex:2}
 .s6-1-1 .minititle{
 	margin-bottom: 5px;
 	letter-spacing: 2px;
@@ -1217,7 +1221,7 @@ background-color: white!important;
 	cursor: pointer;
 }
 .s6-2-1 .contenttext:hover:after{
-	/* content: "Minh sinh ra và lớn lên ở Sài Gòn và là cựu sinh viên của khoa Quản trị kinh doanh chuyên ngành Nhân sự. Sau 4 năm học đại học và 1 năm ra đời làm việc mình cảm thấy bản thân mình hoàn toàn không phù hợp với công việc này, bởi vì tính cách mình khá nhát và hướng nội. Sau nhiều lần đấu tranh tư tưởng, cuối cùng mình đã quyết định rẽ hướng để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Và hiện tại mục tiêu mình muốn hướng đến là trở thành UX/UI designer. Với số tuổi không còn nhỏ thì việc bắt đầu muộn cũng không phải là điều gì không tốt, bởi khi ấy mình biết được rằng bản thân đã không còn nhiều thời gian như các bạn trẻ bây giờ nữa, mình sẽ phải cố gắng phấn đấu nhiều hơn để không lãng phí thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn theo sau và ủng hộ cho quyết định quan trọng lần này của mình."; */
+	content: "Minh sinh ra và lớn lên ở Sài Gòn và là cử nhân đại học khoa Quản trị kinh doanh quốc tế. Sau khi tốt nghiệp ra trường và đi làm được một năm, mình đã quyết định rẽ hướng sang ngành Thiết kế để theo đuổi lại niềm đam mê thời còn là học sinh của mình. Mình đã hoàn thành khóa DIM của trường Arena Multimedia và hiện tại đã có 3 năm kinh nghiệm làm việc trong môi trường product. Việc bắt đầu muộn hơn so với các bạn đồng nghiệp trẻ khác đã trở thành động lực để mình không ngừng nỗ lực và phấn đấu, nhằm không lãng phí khoảng thời gian còn lại. Hơn hết, mình luôn cảm thấy biết ơn vì gia đình đã luôn đồng hành và ủng hộ mình trên hành trình quan trọng này.";
 	position: absolute;
 	top:0;
 	right:0;
@@ -1430,8 +1434,8 @@ background-color: white!important;
 /*header portfolio - codepen*/
 .black {
 	position: absolute;
-	background: transparent;
-	border-bottom: 1px solid #faf7f3;
+	/* background: #141310; */
+	
 }
 .black a, .black i{
 	color: white;
@@ -2087,8 +2091,8 @@ background-color: white!important;
 	cursor: crosshair;
 }
 .wid{
-	padding: 0;
-	border-bottom: 0;
+	/* padding: 0;
+	border-bottom: 0; */
 }
 .s7-item .dec{
 	margin:0 auto 30px auto;
@@ -2258,8 +2262,9 @@ background-color: white!important;
  	animation: tilt-in-right-1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s alternate both;
 }
 .noborder{
-	border-bottom: none;
-	padding: 0 150px
+	/* border-bottom: none;
+	padding: 0 150px */
+
 }
 @media (max-width: 1020px){
 .b-img{
