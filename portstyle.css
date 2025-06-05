@@ -1452,7 +1452,7 @@ background-color: white!important;
 	justify-content: center;
 	background: #141310;
 	background-attachment: fixed;
-	height: 90%;
+	height: 80%;
 	text-align: center;
 	overflow: hidden;
 }
@@ -1725,12 +1725,13 @@ background-color: white!important;
 .s9-r{
 	position: relative;
 	text-align: center;
+	
 	height: 700px;
-	flex:2.2;
+	flex: 2.5;
 }
 .s9-img{
-	height: 500px;
-	width: 800px;
+	height: 80%;
+	width: 80%;;
 	position: relative;
 	left: 50%;
 	top: 50%;
@@ -1771,8 +1772,8 @@ background-color: white!important;
 	transform: translateX(0)
 }
 .s9-img img{
-	height: 500px;
-	width: 800px;
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
 	position: absolute;
 	left: 50%;
@@ -2266,17 +2267,27 @@ background-color: white!important;
 	padding: 0 150px */
 
 }
-@media (max-width: 1020px){
+@media (max-width: 1028px){
 .b-img{
 	width: 250px!important;
 }
+.s7-l{
+	display: none !important;
 }
-@media screen and (max-width: 1366px){
+.s7-r{flex: 1;}
+}
+@media screen and (max-width: 1366px)
+{
+	.top{height: 400px;
+	padding: 80px}
+	.deconstructed{font-size: 60px;}
 	.navbar{
 		padding: 0 40px;
 		width: 100%;
 		z-index: 10000;
 	}
+	.grid-demo{padding: 40px; grid-gap:40px}
+	
 	/* .over{
 		overflow-x: hidden;
 	} */
@@ -2301,26 +2312,29 @@ background-color: white!important;
 		padding: 40px 80px;
 	}
 	.s6-1{
-		padding:100px 30px
+		padding:100px 30px;
 	}
+	.s6-2 p{text-align: left;}
+	.s6-2 .maintitle {text-align: left;font-size: 40px;}
+	.s6-1-1{display: block;}
+	.s6-1-1 .titt{margin-top:40px;
 	.s6-1-2{
 		margin-top: 70px
 	}
 	.s6-1-1 img{
-		height:250px;
-		width: 350px;
+		height:100%
+		 width: 350px;
 		margin-right: 40px;
 	}
 	.s6-1-1 div{
 		padding-right: 20px;
+		
 	}
 	.s6-1-2 hr{margin-left: 0;}
 	.s6-2-1{
 		padding: 40px
 	}
-	.s7-item{
-		height:400px;
-	}
+	
 	.s7-col .maintitle{
 		font-size: 23px;
 		font-weight: 600
@@ -2330,13 +2344,8 @@ background-color: white!important;
 	height: 250px;
 	object-fit: cover;
 }
-.s7-l{
-	display:none
-}
 
-/* .b-img{
-	width: 250px!important;
-} */
+
 .s7-item1 .s7-row img {
     height: 170px;
 	width: 300px}
@@ -2377,4 +2386,4 @@ background-color: white!important;
 	.contact-header .mt{
 		bottom: 17%
 	}
-}
+}}
