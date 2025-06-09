@@ -1994,9 +1994,9 @@ background-color: white!important;
 }
 
 .blocks {
-	font-family: OGG;
+	font-family: yipes;
 	display: flex;
-	font-size: 136px;
+	font-size: 140px;
 	color: #141310;
 }
 .circle-shape {
@@ -2022,22 +2022,22 @@ background-color: white!important;
 }
 .circle-shape-3 {
 	position: absolute;
-	top: 74%;
-	left: 24%;
+	top: 63%;
+	left: 22%;
 	transform: translate(-50%, -50%);
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	background: #f93700;
 	border-radius: 100%;
 	z-index: 2;
 }
 .circle-shape-4 {
 	position: absolute;
-	top: 12%;
-	left: 32%;
+	top: 9%;
+	left: 33%;
 	transform: translate(-50%, -50%);
-	width: 40px;
-	height: 40px;
+	width: 80px;
+	height: 80px;
 	background: #f93700;
 	border-radius: 100%;
 	z-index: 2;
@@ -2070,14 +2070,14 @@ background-color: white!important;
 }
 .showreel{
 	position: absolute;
-	left: 0;
+	left: ;
 	bottom: 0;
-	padding: 40px 70px;
-	font-family: Yipes;
+	padding: 40px 80px;
+	font-family: OGG;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 24px;
 	color: #f93700;
-	font-weight: 600;
+	/* font-weight: 500; */
 }
 .showreel:after{
 	content: "";
