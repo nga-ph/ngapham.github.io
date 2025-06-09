@@ -1994,8 +1994,9 @@ background-color: white!important;
 }
 
 .blocks {
+	font-family: OGG;
 	display: flex;
-	font-size: 140px;
+	font-size: 136px;
 	color: #141310;
 }
 .circle-shape {
@@ -2021,22 +2022,22 @@ background-color: white!important;
 }
 .circle-shape-3 {
 	position: absolute;
-	top: 60%;
+	top: 74%;
 	left: 24%;
 	transform: translate(-50%, -50%);
-	width: 40px;
-	height: 40px;
+	width: 80px;
+	height: 80px;
 	background: #f93700;
 	border-radius: 100%;
 	z-index: 2;
 }
 .circle-shape-4 {
 	position: absolute;
-	top: 9%;
-	left: 33%;
+	top: 12%;
+	left: 32%;
 	transform: translate(-50%, -50%);
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	background: #f93700;
 	border-radius: 100%;
 	z-index: 2;
@@ -2276,8 +2277,20 @@ background-color: white!important;
 }
 .s7-r{flex: 1;}
 }
+@media screen and (max-width: 1520px)
+{
+
+.circle-shape-2 {
+	width: 160px;
+	height: 160px;
+
+}
+}
+
 @media screen and (max-width: 1366px)
 {
+
+
 	.top{height: 400px;
 	padding: 80px}
 	.deconstructed{font-size: 60px;}

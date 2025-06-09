@@ -13,7 +13,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 	<meta property="og:image" content="logothumb.png"/>
-	<meta property="og:description" content="Hello! I'm Nga Pham (Jadie Nga). Welcome to my PORTFOLIO"/>
+	<meta property="og:description" content="Hello! I'm Nga Pham. Welcome to my PORTFOLIO"/>
 	<meta property="og:image:width" content="1200"/>
 	<meta property="og:image:height" content="600"/>
 </head>
@@ -24,7 +24,7 @@
 	<button id="btntop" onClick="topFunction()">  <i class="fas fa-angle-up"></i> </button>
   	<div class="noborder" style="display:flex;justify-content: center;  align-items: center">
 	<div class="navbar wid"> 
-      <p class="logo"> <a href="index.html">  JadieNga </a> </p>
+      <p class="logo"> <a href="index.html">  JadeNga </a> </p>
 
 		<ul class="nav">
 			<li><a href="index.html" class="color">Home</a></li>
@@ -47,12 +47,12 @@
 		  </ul>	
 	</div>	
   	</div>
-	<div class="showreel"> My portfolio </div>
+	<!-- <div class="showreel"> My portfolio </div> -->
 	<div class="container">
 			<div class="wrapper-img">
 				<div class="box"></div>
 				<div>
-					<img class="image" src="abc.jpg"/>
+					<img class="image" src="home5.jpg"/>
 				</div>
 			</div>
 			<div class="circle-shape"></div>
@@ -60,10 +60,10 @@
 			<div class="circle-shape-3"></div>
 			<div class="circle-shape-4"></div>
 			<div class="blocks">
-				<div class="block-1 block">Hi!</div>
-				<div class="block-2 block">I'm </div>
-				<div class="block-3 block">Nga</div>
-				<div class="block-4 block">Pham</div>
+				<div class="block-1 block">Portfolio</div>
+				<div class="block-2 block"> My</div>
+				<div class="block-3 block">Welcome</div>
+				<div class="block-4 block">To</div>
 			</div>
 		</div>
 </div>
@@ -78,7 +78,7 @@
  				<div class="social-links">
  					<a href="https://www.facebook.com/phnga24/" target="_blank"><i class="fab fa-facebook-f"></i></a>
  					<a href="https://www.behance.net/phnga"target="_blank"><i class="fab fa-behance"></i></a>
- 					<!-- <a href="https://www.instagram.com/jadengaa/" target="_blank"><i class="fab fa-instagram"></i></a> -->
+ 					<a href="https://www.instagram.com/ngaph.24/" target="_blank"><i class="fab fa-instagram"></i></a>
  				</div>
  		</div>
 	<p class="contenttext" > Hello, my name is Nga Pham, I was born and grew up in HCM city. With 3 years of experience in a product-based environment, I’ve had the opportunity to participated in end-to-end product development — from business analysis and userflow design to UI implementation, testing, and UX enhancement. As a UX/UI designer with a mindset of continuous improvement and always putting my heart into every design I believe that I can bring practical value to any business I work with.
@@ -194,7 +194,7 @@
 	<div style="display: flex;justify-content: center;  align-items: center; 	border-top: 1px solid black;border-bottom: 1px solid black;">
 	<div class="ft-t">
 		<div class="ft-col">
-			<a href="index.html"><p class="logo"> JadieNga</p> </a>
+			<a href="index.html"><p class="logo"> JadeNga</p> </a>
 			<p class="contenttext">Ho Chi Minh City, Vietnam </p>
 		</div>
 		<div class="ft-col">
@@ -208,7 +208,7 @@
 		<div class="ft-col">
 			<div> 
 				<a href="https://www.facebook.com/phnga24/" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-				<a href="https://www.instagram.com/jadengaa/" target="_blank"> <i class="fab fa-instagram-square"></i></a>
+				<a href="https://www.instagram.com/ngaph.24/" target="_blank"> <i class="fab fa-instagram-square"></i></a>
 				<a href="https://www.behance.net/phnga" target="_blank" > <i class="fab fa-behance"></i></a>
 			</div>
 			<p class="contenttext"><a href="mailto:phnga2405@gmail.com"> phnga2405@gmail.com</a> </p>
@@ -246,34 +246,36 @@ function scrollFunction() {
  AOS.init();
 </script>	
 <script>
+	          // port
 			TweenMax.to(".block-1", 2, {
-				x: "-80",
+				x: "0",
 				y: "-170",
-				scale: "1.5",
+				scale: "0.7",
 				ease: Expo.easeInOut,
 			});
-
+            // my
 			TweenMax.to(".block-2", 2, {
 				x: "-80",
-				y: "200",
-				scale: "0.8",
+				y: "250",
+				scale: "0.7",
 				ease: Expo.easeInOut,
 			});
-
+            // welcome
 			TweenMax.to(".block-3", 2, {
-				x: "250",
-				y: "-250",
-				scale: "0.9",
+				x: "120",
+				y: "-320",
+				scale: "0.6",
 				ease: Expo.easeInOut,
 			});
+			// to
 			TweenMax.to(".block-4", 2, {
-				x: "20",
-				y: "220",
-				scale: "0.5",
+				x: "-280",
+				y: "200",
+				scale: "0.7",
 				ease: Expo.easeInOut,
 			});
 
-			TweenMax.to(".box", 2.4, {
+			TweenMax.to(".box",2, {
 				y: "-100%",
 				ease: Expo.easeInOut,
 			});
